@@ -119,7 +119,7 @@ void gps_loc()
     gps.f_get_position(&flat, &flon, &age);   
     Serial.print("AT+CMGF=1\r"); 
     delay(400);
-    Serial.println("AT + CMGS = \"+917060159100\"");// recipient's mobile number with country code
+    Serial.println("AT + CMGS = \"+91xxxxxxxxxx\"");// recipient's mobile number with country code
     delay(300);
     Serial.print("Latitude = ");
     Serial.print(flat == TinyGPS::GPS_INVALID_F_ANGLE ? 0.0 : flat, 6);
