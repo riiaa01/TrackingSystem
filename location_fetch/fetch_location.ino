@@ -140,7 +140,7 @@ void init_sms()
 {
   Serial.println("AT+CMGF=1");
   delay(400);
-  Serial.println("AT+CMGS=\"9540661418\"");   
+  Serial.println("AT+CMGS=\"+91-xxxxxxxxxx\"");   
   delay(400);
 }
 void send_data(String message)
